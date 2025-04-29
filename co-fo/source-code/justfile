@@ -1,0 +1,8 @@
+abi:
+    flutter build apk --split-per-abi --target-platform android-arm64  --release  
+
+uninstall:
+    adb uninstall co.laydata.uniapp
+
+install:
+    flutter install --use-application-binary=build/app/outputs/flutter-apk/app-arm64-v8a-release.apk
